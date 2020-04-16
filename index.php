@@ -12,7 +12,7 @@ if (isset($_POST['eventId'])) {
 
 switch ($eventId) {
 
-	// DBsave
+	// データベース保存
 	case 'save':
 
 		$action->saveDbPostData($_POST);
