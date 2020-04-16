@@ -1,7 +1,8 @@
 <?php
-	// 登録データ取得
+// 登録データ取得
 	$post_datas = $action->getDbPostData();
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>

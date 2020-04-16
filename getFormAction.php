@@ -27,16 +27,16 @@ class getFormAction {
 	}
 
 
-
-
 	function getDbPostData(){
-		//登録データ取得
+		// 登録データ取得
 		$smt = $this->pdo->prepare('select * from samplebbs order by created_at DESC limit 100');
 		$smt->execute();
-
+		// 実行結果を配列に返す。
 		$result = $smt->fetchAll(PDO::FETCH_ASSOC);
+
 		return $result;
-	}
+	}	
+
 }
 
 ?>
