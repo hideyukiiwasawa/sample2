@@ -1,11 +1,7 @@
 <?php
-
-// -----------------ここを追記--------------------
-// 登録データ取得
-$post_datas = $action->getDbPostData();
-
+	// 登録データ取得
+	$post_datas = $action->getDbPostData();
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +33,6 @@ $post_datas = $action->getDbPostData();
 	<hr>
 
 	<!-- 投稿表示エリア -->
-	<!-- ココから変更-------------------------- -->
 	<?php if (!empty($post_datas)) {?>
 	<div class="list">
 		<?php foreach ($post_datas as $post) { ?>
